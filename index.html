@@ -5,7 +5,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,6 +18,212 @@
       rel="stylesheet"
     />
     <style>
+      /* ==========================
+   GLOBAL
+========================== */
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+        font-family: "Quicksand", sans-serif;
+        overflow-x: hidden;
+        color: #fff;
+        background: linear-gradient(to bottom, #0d0b61, #294669);
+      }
+
+      p {
+        font-family: "Oxygen", sans-serif;
+        line-height: 1.8;
+        margin-bottom: 0;
+      }
+
+      /* ==========================
+   PARTICLES
+========================== */
+
+      #particles-js {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+      }
+
+      /* ==========================
+   CONTAINER
+========================== */
+
+      .container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px 20px 80px;
+      }
+
+      .row {
+        align-items: center;
+      }
+
+      /* ==========================
+   LOGO
+========================== */
+
+      /* .logo {
+    max-width: 350px !important;
+    width: 100%;
+} */
+
+      .description {
+        max-width: 520px;
+        font-size: 18px;
+      }
+
+      /* ==========================
+   ROCKET
+========================== */
+
+      .img-rocket {
+        max-width: 550px;
+        width: 100%;
+        display: block;
+        margin: auto;
+        transform: rotate(-18deg);
+      }
+
+      /* ==========================
+   FOOTER
+========================== */
+
+      footer {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+
+        text-align: center;
+        color: rgba(255, 255, 255, 0.9);
+
+        /* border-top: 1px solid rgba(255,255,255,.15); */
+
+        padding-top: 15px;
+      }
+
+      footer p {
+        margin: 0;
+      }
+
+      /* ==========================
+   TABLET
+========================== */
+
+      @media (max-width: 992px) {
+        .container {
+          padding-top: 60px;
+          padding-bottom: 100px;
+        }
+
+        h1 {
+          font-size: 5rem;
+        }
+
+        h2 {
+          font-size: 2rem;
+        }
+
+        .img-rocket {
+          max-width: 420px;
+          margin-top: 30px;
+        }
+      }
+
+      /* ==========================
+   MOBILE
+========================== */
+
+      @media (max-width: 912px) {
+        .container {
+          justify-content: flex-start;
+          text-align: center;
+          padding: 30px 20px 90px;
+        }
+
+        .logo {
+          max-width: 250px;
+          margin: 0 auto 25px;
+        }
+
+        h1 {
+          font-size: 75pt !important;
+          font-weight: bold !important;
+          text-align: center !important;
+          margin-bottom: 0 !important;
+        }
+
+        h2 {
+          font-size: 40pt !important;
+          text-align: center !important;
+        }
+
+        .description {
+          max-width: 100%;
+          font-size: 15px;
+        }
+
+        .img-rocket {
+          max-width: 350px !important;
+          margin-top: 35px;
+          transform: rotate(-15deg);
+        }
+
+        footer {
+          position: relative;
+          bottom: auto;
+          margin-top: 30px;
+          padding-top: 15px;
+        }
+      }
+
+      /* ==========================
+   EXTRA SMALL
+========================== */
+
+      @media (max-width: 480px) {
+        .container {
+          padding: 20px 16px 60px;
+        }
+
+        .logo {
+          max-width: 220px;
+        }
+
+        h1 {
+          font-size: 45pt !important;
+          font-weight: 700 !important;
+          text-align: center !important;
+          margin-bottom: 0 !important;
+        }
+
+        h2 {
+          font-size: 30pt !important;
+          text-align: center !important;
+        }
+
+        .description {
+          font-size: 14px;
+        }
+
+        .img-rocket {
+          max-width: 200px;
+        }
+
+        footer {
+          font-size: 12px;
+        }
+      }
       html,
       body {
         height: 100%;
@@ -117,7 +322,7 @@
           <div class="row">
             <div class="col-12">
               <img
-                src="bulelengkab.png"
+                src="bulelengkab.webp"
                 alt="img-bulelengkab"
                 class="img-fluid logo"
               />
@@ -132,7 +337,7 @@
         </div>
         <div class="col-lg-4 col-12">
           <img
-            src="rocket.png"
+            src="rocket.webp"
             alt="rocket image"
             class="img-fluid img-rocket"
           />
@@ -144,7 +349,6 @@
         ©<span id="year-copyright"></span> Pemerintah Kabupaten Buleleng
       </p>
     </footer>
-    <script type="text/javascript" src="script.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
